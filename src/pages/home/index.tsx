@@ -25,7 +25,10 @@ const Home = () => {
 
   return (
     <Grid>
-      <Filters showNoRoomsInput={showNoRoomsInput} countries={countries} />
+      <Filters setFilteredPosts={(params: postsThumbnailData[]) => {
+        debugger;
+        setPosts(params);
+      }} />
       <Grid container spacing={2}>
         {errorMessage === '' && <Posts posts={posts} />}
         {errorMessage !== '' && errorMessage}

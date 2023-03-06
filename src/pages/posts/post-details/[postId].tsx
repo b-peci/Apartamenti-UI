@@ -1,7 +1,5 @@
 import { GetStaticPaths } from "next/types";
 import { DEFAULT_GUID_VALUE } from "../add-post/[postId]";
-import imageSrc from "../../../../public/images/pages/404.png"
-import imageSrc2 from "../../../../public/images/pages/401.png"
 import Image from 'next/image'
 import DOMPurify from 'dompurify'
 import { Box, Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
